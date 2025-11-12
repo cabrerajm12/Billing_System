@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f5f7fb;
+    }
+
+    header {
+      background-color: #1f4b91;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h2 {
+      margin: 0;
+    }
+
+    .logout-btn {
+      background-color: white;
+      color: #1f4b91;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .logout-btn:hover {
+      background-color: #e3e6ea;
+    }
+
+    .portal-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .portal-content {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .portal-content h3 {
+      color: #1f4b91;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .portal-content p {
+      color: #6c757d;
+      font-size: 15px;
+    }
+
+    /* --- Info Boxes --- */
+    .info-section {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .info-box {
+      background: #fff;
+      flex: 1;
+      min-width: 300px;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease;
+    }
+
+
+    .info-box h4 {
+      color: #1f4b91;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #1f4b91;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .info-box table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .info-box td {
+      padding: 8px 0;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .info-box td.label {
+      font-weight: bold;
+      color: #1f4b91;
+      width: 40%;
+    }
+
+    .info-box td.value {
+      text-align: right;
+      color: #555;
+    }
+
+    .tuition-summary {
+      margin-top: 15px;
+      text-align: right;
+    }
+
+    .tuition-summary span {
+      display: block;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .tuition-summary .total {
+      color: #1f4b91;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Welcome to Student Portal</h2>
+    <button class="logout-btn" onclick="window.location.href='index.html'">Logout</button>
+  </header>
+
+    <div class="info-section">
+      <!-- Student Details Box -->
+      <div class="info-box">
+        <h4>Student Details</h4>
+        <table>
+          <tr>
+            <td class="label">Student ID:</td>
+            <td class="value">2025001</td>
+          </tr>
+          <tr>
+            <td class="label">Name:</td>
+            <td class="value">John Doe</td>
+          </tr>
+          <tr>
+            <td class="label">Course:</td>
+            <td class="value">BS Information Technology</td>
+          </tr>
+          <tr>
+            <td class="label">Year Level:</td>
+            <td class="value">3rd Year</td>
+          </tr>
+          <tr>
+            <td class="label">Email:</td>
+            <td class="value">johndoe@email.com</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Tuition Details Box -->
+      <div class="info-box">
+        <h4>Tuition Summary</h4>
+        <table>
+          <tr>
+            <td class="label">Total Tuition:</td>
+            <td class="value">₱ 35,000.00</td>
+          </tr>
+          <tr>
+            <td class="label">Amount Paid:</td>
+            <td class="value">₱ 20,000.00</td>
+          </tr>
+          <tr>
+            <td class="label">Remaining Balance:</td>
+            <td class="value"><strong style="color: #d9534f;">₱ 15,000.00</strong></td>
+          </tr>
+        </table>
+
+        <div class="tuition-summary">
+          <span class="total">Next Payment Due: December 15, 2025</span>
+          <span>Status: <strong style="color: green;">Partially Paid</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

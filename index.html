@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Information System</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background: #fff;
+      padding: 60px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .icon {
+      font-size: 60px;
+      color: #1f4b91;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #2b3a67;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #6c757d;
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .card img {
+  width: 60px;        
+  height: 60px;       
+  object-fit: contain; 
+  display: block;
+  margin: 0 auto 10px; 
+    }
+    .card {
+      background-color: #f8f9fa;
+      padding: 20px 30px;
+      border-radius: 8px;
+      width: 180px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card-icon {
+      font-size: 32px;
+      color: #1f4b91;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      color: #1f4b91;
+      margin-bottom: 5px;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #6c757d;
+    }
+
+    .btn {
+      background-color: #1f4b91;
+      color: #fff;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #15366c;
+    }
+
+    @media (max-width: 600px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+  <!-- Using simple Unicode icons for demonstration -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">
+      🎓
+    </div>
+    <h1>Student Information System</h1>
+    <p>Access your student profile, view tuition details, and make secure payments</p>
+
+    <div class="cards">
+  <div class="card">
+    <img src="assets/1.png" alt="Profile Icon" class="card-img">
+    <h3>Profile Access</h3>
+    <p>View your student details</p>
+  </div>
+
+  <div class="card">
+    <img src="assets/2.png" alt="Profile Icon" class="card-img">
+    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+    <h3>Tuition Info</h3>
+    <p>Track your fees</p>
+  </div>
+
+  <div class="card">
+     <img src="assets/3.png" alt="Profile Icon" class="card-img">
+    <div class="card-icon"><i class="fas fa-lock"></i></div>
+    <h3>Secure Payments</h3>
+    <p>Pay tuition online</p>
+  </div>
+</div>
+
+
+    <a href="login.html" class="btn">Login to Portal</a>
+  </div>
+</body>
+</html>

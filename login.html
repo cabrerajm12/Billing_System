@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal Login</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-box {
+      background: #fff;
+      padding: 50px 60px;
+      border-radius: 12px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 350px;
+    }
+
+    .login-box h2 {
+      color: #1f4b91;
+      margin-bottom: 30px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .login-box input[type="text"]:focus,
+    .login-box input[type="password"]:focus {
+      border-color: #1f4b91;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: #1f4b91;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #163a75;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #1f4b91;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login to Portal</h2>
+    <form onsubmit="return login()">
+      <input type="text" id="studentID" placeholder="Student ID" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <script>
+    function login() {
+      const id = document.getElementById("studentID").value;
+      const pass = document.getElementById("password").value;
+
+      // Simple sample login check
+      if (id === "2025001" && pass === "admin123") {
+        alert("Login successful!");
+        window.location.href = "portal.html";
+        return false;
+      } else {
+        alert("Invalid Student ID or Password.");
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
